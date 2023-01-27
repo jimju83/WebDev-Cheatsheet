@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<head>
+    <title>WebDev Cheatsheet Challenge</title>
+    <!-- Link Google Fonts: 
+        Roboto Mono font for <code> tags, 
+        Titillium Web for main
+        Josefin Sans for header, footer
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<html>
+    <header>
+        <h1 class="page-title"> WebDev Cheatsheet </h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-block"><a href="#html-notes">HTML</a></li>
+                <li class="nav-block"><a href="#css-notes">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <body>
+        <main>
+            <!-- HTML Notes-->
+            <article id="html-notes">
+                <h2 class="article-title">Commonly Used HTML Tags</h2>
+                <!-- HTML Elements Section -->
+                <section id="html-elemnt">
+                    <h3 class="section-title">HTML Elements</h3>
+
+                    <div id="semantic">
+                        <h4>Semantic Elements</h4>
+                            <p>In coding, <span class="keywords">semantics</span>, refers to the meaning of code.
+                                Semantic elements in HTML describe the meaning of a tag to both the developer and the 
+                                browser.
+                            </p>
+
+                            <!-- Table of Semantic Elements -->
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th class="col-name">Name</th>
+                                    <th class="col-tag">Tag</th>
+                                    <th class="col-description">Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Header</td>
+                                    <td>
+                                    <code>&lt;header&gt;</code>
+                                    </td>
+                                    <td>
+                                    The <code>&lt;header&gt;</code> element is a container for
+                                    introductory content for the page or section.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nav</td>
+                                    <td><code>&lt;nav&gt;</code></td>
+                                    <td>
+                                    The <code>&lt;nav&gt;</code> element contains a set of navigational links.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Main</td>
+                                    <td><code>&lt;main&gt;</code></td>
+                                    <td>
+                                    The <code>&lt;main&gt;</code> element contains the
+                                    main content of a document.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Section</td>
+                                    <td><code>&lt;section&gt;</code></td>
+                                    <td>
+                                    The <code>&lt;section&gt;</code> element is used to
+                                    group related content together. It can be used to explicitly
+                                    define a new section in the document outline
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Article</td>
+                                    <td><code>&lt;article&gt;</code></td>
+                                    <td>
+                                    An <code>&lt;article&gt;</code> defines an independent, or
+                                    self-contained content.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Aside</td>
+                                    <td><code>&lt;aside&gt;</code></td>
+                                    <td>
+                                    An <code>&lt;aside&gt;</code> element defines
+                                    content that is indirectly related to the content that it placed
+                                    next to (like a sidebar).
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Figure</td>
+                                    <td><code>&lt;figure&gt;</code></td>
+                                    <td>
+                                    The <code>&lt;figure&gt;</code> element represents
+                                    self-contained content, like photos, diagrams, illustrations,
+                                    code listings, etc. The
+                                    <code>&lt;figcaption&gt;</code> tag defines a caption for the 
+                                    <code>&lt;figure&gt;</code> element.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Footer</td>
+                                    <td><code>&lt;footer&gt;</code></td>
+                                    <td>
+                                    The
+                                    <code>&lt;footer&gt;</code> element defines a footer for a
+                                    document or sectioning. 
+                                    <p> A <code>&lt;footer&gt;</code> typically contains:
+                                        <ul>
+                                            <li>authorship information</li>
+                                            <li>copyright information</li>
+                                            <li>contact information</li>
+                                            <li>sitemap</li>
+                                            <li>links to the top</li>
+                                            <li>related content</li>
+                                        </ul>
+                                    </p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div id="non-semantic">
+                            <h4>Non-Semantic Elements</h4> 
+                            <p>Non-semantic elements are similar to semantic elements, but do not
+                            tell the developer anything about the content
+                            </p>
+
+                            <!-- table of non-semantic elements -->
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-name">Name</th>
+                                        <th class="col-tag">Tag</th>
+                                        <th class="col-description">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>div</td>
+                                    <td>
+                                    <code>&lt;div&gt;</code>
+                                    </td>
+                                    <td>
+                                    The <code>&lt;div&gt;</code> tag is used to make a division
+                                    of content in a document
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>span</td>
+                                    <td><code>&lt;span&gt;</code></td>
+                                    <td>
+                                    The <code>&lt;span&gt;</code> tag defines an inline container
+                                    used to mark up part of a document.
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                </section>
+
+                <!-- HTML Tables-->
+                <article id="html-tables">
+                    <h2 class="article-title">HTML Table Reference</h2>
+                    <section id="table-tags">
+                        <h3 class="section-title">Table Tags</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="col-name">Name</th>
+                                    <th class="col-tag">Tag</th>
+                                    <th class="col-description">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Table</td>
+                                    <td><code>&lt;table&gt;</code></td>                    
+                                    <td>The wrapper element for all HTML tables.</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Head</td>
+                                    <td><code>&lt;thead&gt;</code></td>
+                                    <td>The set of rows defining the column headers in a table.</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Body</td>
+                                    <td><code>&lt;tbody&gt;</code></td>            
+                                    <td>The set of rows containing actual table data.</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Row</td>  
+                                    <td><code>&lt;tr&gt;</code></td>
+                                    <td>The table row container.</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td><code>&lt;td&gt;</code></td>
+                                    <td>The table row container.</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Foot</td>
+                                    <td><code>&lt;tfoot&gt;</code></td>
+                                    <td>The set of rows defining the footer in a table.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    
+                    <!-- Table Attibutes-->
+                    <section id="table-attribute">
+                        <h3 class="section-title">Table Attributes</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="col-name">Name</th>
+                                    <th class="col-tag">Tag</th>
+                                    <th class="col-description">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Column Span</td>
+                                    <td><code>colspan</span></td> 
+                                    <td>Defines how many columns a td element should span.</td>
+                                </tr>
+                                <tr>
+                                    <td>Row Span</td>
+                                    <td><code>rowspan</span></td>
+                                    <td>Defines how many rows a td element should span.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+            </article>
+
+            <!-- CSS Notes -->
+            <article id="css-notes">
+                <h2 class="article-title">Commonly Used CSS Tags</h2>
+                <p>This section contains helpful tables for CSS.</p>
+
+                <section id="psuedo-class">
+                    <h3 class="section-title">Pseudo-Class Tags</h3>
+                    <p>CSS contains psuedo-classes to style link elements as <span class="keywords">signifiers</span>
+                        to offer clues about how to interact with objects.  The syntax for the psuedo-class is 
+                        <code>a:state</code>
+                    </p>
+                    <!-- CSS Pseudo-class for Link and Button States-->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="col-name">Name</th>
+                                <th class="col-tag">State</th>
+                                <th class="col-description">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Link</td>
+                                <td><code>:link</span></td> 
+                                <td>Normal unclicked state</td>
+                            </tr>
+                            <tr>
+                                <td>Hover</td>
+                                <td><code>:hover</span></td>
+                                <td>Defines the behavior when the cursor is placed over the object.</td>
+                            </tr>
+                            <tr>
+                                <td>Active</td>
+                                <td><code>:active</span></td>
+                                <td>Defines the behavior when the object is clicked</td>
+                            </tr>
+                            <tr>
+                                <td>Visited</td>
+                                <td><code>:visited</span></td>
+                                <td>Defines the behavior when a link has been visited.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="col-name">Name</th>
+                                <th class="col-tag">State</th>
+                                <th class="col-description">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Before</td>
+                                <td><code>::before</span></td> 
+                                <td>Creates a <span class="keywords">psuedo-element</span> that is the
+                                first child of the of the selected element.  It can be used to add 
+                                content with the <code>content</code> tag. </td>
+                            </tr>
+                            <tr>
+                                <td>After</td>
+                                <td><code>::after</span></td>
+                                <td>Creates a <span class="keywords">psuedo-element</span> that is the
+                                    first child of the of the selected element.  It can be used to add 
+                                    content with the <code>content</code> tag. </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+        </main>
+    </body>
+
+</html>
