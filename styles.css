@@ -1,0 +1,79 @@
+/* {
+    border: 1px solid black;
+}
+*/
+
+header {
+    position: fixed;
+    color: white;
+    background-color: darkslategrey;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+   
+}
+
+.page-title {
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    font-size: 34px;
+    margin: 10;
+    height: 0px;
+}
+
+.navbar {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    left: 50%;
+    top: 0;
+}
+
+
+.nav-block {
+    list-style-type: none;
+    display: inline-block;
+    background-color: gray;
+    width: 70px;
+    padding: 5px 0;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+main {
+    position: relative;
+    top: 120px;
+    font-family: "Titillium Web", Arial, sans-serif;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+th {
+    background-color:midnightblue;
+    color: white;
+}
+
+.col-name {
+    width: 150px;
+}
+
+.col-tag {
+    width: 150px;
+}
+
+.col-description {
+    width: 500px;
+}
+
+code {
+    color: white;
+    background-color: midnightblue;
+    font-family: "Roboto Mono", Arial, sans-serif;
+    font-size: 12px;
+}
+
+.keywords {
+    font-weight: bold;
+}
