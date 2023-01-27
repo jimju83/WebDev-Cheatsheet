@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <head>
-    <title>WebDev Cheatsheet Challenge</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet</title>
     <!-- Link Google Fonts: 
         Roboto Mono font for <code> tags, 
         Titillium Web for main
@@ -18,7 +21,7 @@
         <nav class="navbar">
             <ul class="nav-list">
                 <li class="nav-block"><a href="#html-notes">HTML</a></li>
-                <li class="nav-block"><a href="#css-notes">CSS</a></li>
+                <li class="nav-block"><a href="./css.html">CSS</a></li>
             </ul>
         </nav>
     </header>
@@ -28,7 +31,8 @@
         <main>
             <!-- HTML Notes-->
             <article id="html-notes">
-                <h2 class="article-title">Commonly Used HTML Tags</h2>
+                <h2 class="article-title">HTML Tags</h2>
+                <br>
                 <!-- HTML Elements Section -->
                 <section id="html-elemnt">
                     <h3 class="section-title">HTML Elements</h3>
@@ -176,6 +180,8 @@
                 <!-- HTML Tables-->
                 <article id="html-tables">
                     <h2 class="article-title">HTML Table Reference</h2>
+                    <br>
+                    
                     <section id="table-tags">
                         <h3 class="section-title">Table Tags</h3>
                         <table>
@@ -248,77 +254,7 @@
                     </section>
             </article>
 
-            <!-- CSS Notes -->
-            <article id="css-notes">
-                <h2 class="article-title">Commonly Used CSS Tags</h2>
-                <p>This section contains helpful tables for CSS.</p>
-
-                <section id="psuedo-class">
-                    <h3 class="section-title">Pseudo-Class Tags</h3>
-                    <p>CSS contains psuedo-classes to style link elements as <span class="keywords">signifiers</span>
-                        to offer clues about how to interact with objects.  The syntax for the psuedo-class is 
-                        <code>a:state</code>
-                    </p>
-                    <!-- CSS Pseudo-class for Link and Button States-->
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="col-name">Name</th>
-                                <th class="col-tag">State</th>
-                                <th class="col-description">Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Link</td>
-                                <td><code>:link</span></td> 
-                                <td>Normal unclicked state</td>
-                            </tr>
-                            <tr>
-                                <td>Hover</td>
-                                <td><code>:hover</span></td>
-                                <td>Defines the behavior when the cursor is placed over the object.</td>
-                            </tr>
-                            <tr>
-                                <td>Active</td>
-                                <td><code>:active</span></td>
-                                <td>Defines the behavior when the object is clicked</td>
-                            </tr>
-                            <tr>
-                                <td>Visited</td>
-                                <td><code>:visited</span></td>
-                                <td>Defines the behavior when a link has been visited.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="col-name">Name</th>
-                                <th class="col-tag">State</th>
-                                <th class="col-description">Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Before</td>
-                                <td><code>::before</span></td> 
-                                <td>Creates a <span class="keywords">psuedo-element</span> that is the
-                                first child of the of the selected element.  It can be used to add 
-                                content with the <code>content</code> tag. </td>
-                            </tr>
-                            <tr>
-                                <td>After</td>
-                                <td><code>::after</span></td>
-                                <td>Creates a <span class="keywords">psuedo-element</span> that is the
-                                    first child of the of the selected element.  It can be used to add 
-                                    content with the <code>content</code> tag. </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-            </article>
+         
         </main>
     </body>
 

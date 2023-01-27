@@ -1,8 +1,10 @@
-/* {
+/*
+* {
     border: 1px solid black;
 }
 */
 
+/* Header and Navbar */
 header {
     position: fixed;
     color: white;
@@ -11,18 +13,6 @@ header {
     top: 0;
     z-index: 3;
    
-}
-
-body {
-    margin: 100px;
-}
-
-.page-title {
-    font-family: "Josefin Sans";
-    font-weight: bold;
-    font-size: 34px;
-    margin: 10;
-    height: 0px;
 }
 
 .navbar {
@@ -44,36 +34,68 @@ body {
     text-align: center;
 }
 
+/* Headings H1-H4 */
+.page-title {
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    font-size: 34px;
+    margin: 10px;
+    height: 0px;
+}
+
+.article-title {
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    font-size: 26px;
+    height: 0px;
+}
+
+.section-title {
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+}
+
+h4 {
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    font-size: 16px;
+}
+
 main {
     position: relative;
     top: 120px;
     font-family: "Titillium Web", Arial, sans-serif;
+    margin: 200px;
 }
 
 table, th, td {
-    border: 1px solid;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
 th {
     background-color:midnightblue;
     color: white;
+    border-color: black;
 }
 
 .col-name {
-    width: 150px;
+    width: 25%;
 }
 
 .col-tag {
-    width: 150px;
+    width: 25%;
 }
 
 .col-description {
-    width: 500px;
+    width: 50%;
 }
 
 code {
     color: white;
-    background-color: midnightblue;
+    background-color: gray;
     font-family: "Roboto Mono", Arial, sans-serif;
     font-size: 12px;
 }
